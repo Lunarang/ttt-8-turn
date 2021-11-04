@@ -54,11 +54,11 @@ def turn(board)
     index = input_to_index(input)
 
     if valid_move?(board, index) == true
+        puts "Nice move!"
         move(board, index, playercharacter = "X")
         display_board(board)
     else
         puts "Invalid move..."
         turn(board)
     end
-
 end 
